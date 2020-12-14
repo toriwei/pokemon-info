@@ -1,11 +1,11 @@
-const elements = document.querySelectorAll("div#pokemon button");
+const buttons = document.querySelectorAll("div#pokemon button");
 const name = document.querySelector("#name");
 const picture = document.querySelector("#picture");
 const type = document.querySelector("#type");
 const height = document.querySelector("#height");
 
-for (let element of elements) {
-  element.addEventListener("click", getPokemon);
+for (let button of buttons) {
+  button.addEventListener("click", getPokemon);
 }
 
 async function getPokemon() {
